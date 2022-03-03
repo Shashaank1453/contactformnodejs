@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form NodeJS</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: #F5EEDC;
+    
+}
+#main-box{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: 400px;
+    min-height: 400px;
+    border: 2px solid #603601;
+    margin: 16vh auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    color: #603601;
+}
+#sub-box input{
+    border: 2px solid #603601 ;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+#sub-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#submit,#clear{
+    background-color: #603601;
+    color: #F5EEDC;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    margin-top: 15px;
+}
+@media(max-width:700px){
+#main-box{ 
+    width: 300px;
+    font-size: 1em;
+}
+.box{
+    margin: 20px;
+    margin-top: 10px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <div id="main-box">
+        <form action="/" method="post">
+            <h1> Contact Info</h1>
+            <div id="sub-box">
+                <input type="text" name="name" id="" placeholder="Your Full Name">
+                <input type="email" name="email" id="" placeholder="Email Address">
+                <input type="tel" name="phone" id="" placeholder="Mobile Number">
+            </div>
+            <div class="box">
+                <input type="reset" value="Clear" id="clear">
+                <input type="submit" value="Send" id="submit">
+            </div>
+            <h3>Your Response has <br> been recorded !</h3>
+        </form>
+    </div>
+</body>
+</html>
